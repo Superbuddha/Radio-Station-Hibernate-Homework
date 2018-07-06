@@ -1,10 +1,15 @@
 package models;
 
+import org.hibernate.annotations.Cascade;
+
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Table
+@Table(name = "programmes")
+@Inheritance(strategy = InheritanceType.JOINED)
+
 public class Programme {
     private int id;
     private String name;
@@ -17,7 +22,6 @@ public Programme(){
 
 }
 
-}
 
     public Programme(int id, String name, int duration, Producer producer, Ads ads, List<Presenter> presenters) {
         this.id = id;
@@ -25,9 +29,11 @@ public Programme(){
         this.duration = duration;
         this.producer = producer;
         this.ads = ads;
-        this.presenters = presenters;
+        this.presenters = new ArrayList<Presenter>();
     }
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     public int getId() {
         return id;
@@ -70,7 +76,9 @@ public Programme(){
         this.ads = ads;
     }
 
+    @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
     @ManyToMany
+    @JoinTable(name = )
     public List<Presenter> getPresenters() {
         return presenters;
     }

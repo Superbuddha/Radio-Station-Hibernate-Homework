@@ -1,4 +1,4 @@
 package models;
 
-public class Producer {
+public class Producer extends Employee {
 }
