@@ -2,7 +2,7 @@ package models;
 
 public enum Ads {
     STATIONIDENT(15),
-    CODECLANAD(30),
+    CODECLAN(30),
     GLASGOWCC(30),
     EASYJET(30);
 

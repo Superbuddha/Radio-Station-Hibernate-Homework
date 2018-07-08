@@ -78,12 +78,17 @@ public Programme(){
 
     @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
     @ManyToMany
-    @JoinTable(name = )
+    @JoinTable(name = "programme_presenter",
+    joinColumns = {@JoinColumn(name = "programme_id", nullable = false, updatable = false)},
+    inverseJoinColumns = {@JoinColumn(name = "presenter_id", nullable = false, updatable = false)})
     public List<Presenter> getPresenters() {
         return presenters;
     }
 
     public void setPresenters(List<Presenter> presenters) {
         this.presenters = presenters;
+    }
+    public void addPresenter(Presenter presenter){
+    this.presenters.add(presenter);
     }
 }

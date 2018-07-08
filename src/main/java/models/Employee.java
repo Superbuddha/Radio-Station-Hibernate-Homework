@@ -19,8 +19,8 @@ public abstract class Employee {
     }
 
     @Id
-    @GeneratedValue
-    @Column(name = )
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id" )
     public int getId() {
         return id;
     }

@@ -17,7 +17,6 @@
         <mapping class = "models.GameShow"/>
         <mapping class = "models.Employee"/>
         <mapping class = "models.Presenter"/>
-        <mapping class = "models.Journalist"/>
         <mapping class = "models.Producer"/>
     </session-factory>
 </hibernate-configuration>
