@@ -32,6 +32,7 @@ public Programme(){
         this.presenters = new ArrayList<Presenter>();
     }
 
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
