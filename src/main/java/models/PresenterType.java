@@ -6,4 +6,4 @@ public enum PresenterType {
     JOURNALIST,
     TALKSHOWHOST;
 }
-//add salary
+//add salary here
