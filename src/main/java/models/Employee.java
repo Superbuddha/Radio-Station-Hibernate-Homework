@@ -14,7 +14,9 @@ public abstract class Employee {
     public Employee(){
 
     }
-    public Employee(int id, String name, double salary){
+    public Employee( String name, double salary){
+        this.name = name;
+        this.salary = salary;
 
     }
 
@@ -29,6 +31,7 @@ public abstract class Employee {
         this.id = id;
     }
 
+    @Column(name = "names")
     public String getName() {
         return name;
     }

@@ -7,14 +7,14 @@ public class Runner {
 
     public static void main(String[] args) {
 
-        Producer producer1 = new Producer(1,"Stephan", 100000, "Auditorium");
-        Producer producer2 = new Producer(2, "Manu", 10000, "Studio 105");
-        Producer producer3 = new Producer(3, "Jacques", 10000, "Studio 305");
+        Producer producer1 = new Producer("Stephan", 100000, "Auditorium");
+        Producer producer2 = new Producer("Manu", 10000, "Studio 105");
+        Producer producer3 = new Producer("Jacques", 10000, "Studio 305");
 
-        Presenter presenter1 = new Presenter(1, "Joanna", 20000,PresenterType.ANNOUNCER);
-        Presenter presenter2 = new Presenter(2, "Henri",20000, PresenterType.JOURNALIST);
-        Presenter presenter3 = new Presenter(3, "Mark",20000,PresenterType.DJ);
-        Presenter presenter4 = new Presenter(4, "Maude", 20000, PresenterType.TALKSHOWHOST);
+        Presenter presenter1 = new Presenter("Joanna", 20000,PresenterType.ANNOUNCER);
+        Presenter presenter2 = new Presenter("Henri",20000, PresenterType.JOURNALIST);
+        Presenter presenter3 = new Presenter("Mark",20000,PresenterType.DJ);
+        Presenter presenter4 = new Presenter("Maude", 20000, PresenterType.TALKSHOWHOST);
 
 
 

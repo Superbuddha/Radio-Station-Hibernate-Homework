@@ -12,8 +12,8 @@ public class Producer extends Employee {
 
     }
 
-    public Producer(int id, String name, double salary, String studio) {
-        super(id, name, salary);
+    public Producer( String name, double salary, String studio) {
+        super( name, salary);
         this.studio = studio;
     }
 

@@ -3,20 +3,23 @@ package models;
 import org.hibernate.annotations.Cascade;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
 @Table(name = "presenters")
 public class Presenter extends Employee{
     private PresenterType presenterType;
+    private List<Programme> programmes;
 
     public Presenter(){
 
     }
 
-    public Presenter(int id, String name, double salary, PresenterType presenterType) {
-        super(id, name, salary);
+    public Presenter( String name, double salary, PresenterType presenterType) {
+        super( name, salary);
         this.presenterType = presenterType;
+        this.programmes = new ArrayList<Programme>();
     }
 
     public PresenterType getPresenterType() {
