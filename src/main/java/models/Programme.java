@@ -23,7 +23,7 @@ public Programme(){
 }
 
 
-    public Programme(int id, String name, int duration, Producer producer, Ads ads, List<Presenter> presenters) {
+    public Programme (String name, int duration, Producer producer, Ads ads) {
         this.id = id;
         this.name = name;
         this.duration = duration;

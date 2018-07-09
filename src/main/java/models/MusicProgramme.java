@@ -14,8 +14,8 @@ public class MusicProgramme extends Programme{
 
     }
 
-    public MusicProgramme(int id, String name, int duration, Producer producer, Ads ads, List<Presenter> presenters, String music) {
-        super(id, name, duration, producer, ads, presenters);
+    public MusicProgramme( String name, int duration, Producer producer, Ads ads, String music) {
+        super( name, duration, producer, ads);
         this.music = music;
     }
 

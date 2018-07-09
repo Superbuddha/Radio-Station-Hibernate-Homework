@@ -18,16 +18,16 @@ public class Runner {
 
 
 
-        Programme nightfly = new Programme("The Nightfly", 120, "Stephan", Ads.EASYJET);
+        Programme nightfly = new Programme("The Nightfly", 120, producer1, Ads.EASYJET);
         DBHelper.save(nightfly);
 
-        MusicProgramme allTheHits = new MusicProgramme("All the Hits", 180, "Stephan", Ads.GLASGOWCC, "Hits");
+        MusicProgramme allTheHits = new MusicProgramme("All the Hits", 180, producer1, Ads.GLASGOWCC, "Hits");
         DBHelper.save(allTheHits);
 
-        NewsProgramme newsAtSix = new NewsProgramme( "News at Six", 60, "Manu",Ads.STATIONIDENT, "Local News", 25);
+        NewsProgramme newsAtSix = new NewsProgramme( "News at Six", 60, producer2, Ads.STATIONIDENT, "Local News", 25);
         DBHelper.save(newsAtSix);
 
-        GameShow thousandPoundQuestion = new GameShow("The £1000 Question", 45, "Jacques", Ads.CODECLAN, "Music Quiz");
+        GameShow thousandPoundQuestion = new GameShow("The £1000 Question", 45, producer3, Ads.CODECLAN, "History Quiz");
 
 
         List<Presenter> allPresenters = DBHelper.getAll(Presenter.class);

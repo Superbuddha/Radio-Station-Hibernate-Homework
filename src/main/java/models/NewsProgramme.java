@@ -14,8 +14,8 @@ import java.util.List;
     public NewsProgramme(){
     }
 
-    public NewsProgramme(int id, String name, int duration, Producer producer, Ads ads, List<Presenter> presenters, String news, int weatherTemperature) {
-        super(id, name, duration, producer, ads, presenters);
+    public NewsProgramme( String name, int duration, Producer producer, Ads ads, String news, int weatherTemperature) {
+        super( name, duration, producer, ads);
         this.news = news;
         this.weatherTemperature = weatherTemperature;
     }

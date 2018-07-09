@@ -14,8 +14,8 @@ public class GameShow extends Programme {
 
     }
 
-    public GameShow(int id, String name, int duration, Producer producer, Ads ads, List<Presenter> presenters, String quiz) {
-        super(id, name, duration, producer, ads, presenters);
+    public GameShow(String name, int duration, Producer producer, Ads ads, String quiz) {
+        super( name, duration, producer, ads);
         this.quiz = quiz;
     }
 
