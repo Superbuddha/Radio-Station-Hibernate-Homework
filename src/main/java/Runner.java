@@ -18,7 +18,7 @@ public class Runner {
 
         Studio studio1 = new Studio("Studio Charles Trenet", 2000, producer1);
         Studio studio2 = new Studio("Studio 105", 25, producer2);
-        Studio studio = new Studio("Studio 305", 15, producer3);
+        Studio studio3 = new Studio("Studio 305", 15, producer3);
 
 
 

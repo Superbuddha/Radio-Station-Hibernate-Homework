@@ -7,7 +7,7 @@ import javax.persistence.Table;
 import java.util.List;
 
 @Entity
-@Table(name = "news programmes") public class NewsProgramme extends Programme {
+@Table(name = "news_programmes") public class NewsProgramme extends Programme {
     private String news;
     private int weatherTemperature;
 

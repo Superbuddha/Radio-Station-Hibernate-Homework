@@ -5,7 +5,7 @@ import javax.persistence.Table;
 import java.util.List;
 
 @Entity
-@Table(name = "game shows")
+@Table(name = "game_shows")
 public class GameShow extends Programme {
 
     private String quiz;

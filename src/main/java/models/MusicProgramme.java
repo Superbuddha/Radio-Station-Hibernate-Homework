@@ -5,7 +5,7 @@ import javax.persistence.Table;
 import java.util.List;
 
 @Entity
-@Table(name = "music programme")
+@Table(name = "music_programme")
 public class MusicProgramme extends Programme{
 
     private String music;
