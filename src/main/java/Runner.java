@@ -16,6 +16,10 @@ public class Runner {
         Presenter presenter3 = new Presenter("Mark",20000,PresenterType.DJ);
         Presenter presenter4 = new Presenter("Maude", 20000, PresenterType.TALKSHOWHOST);
 
+        Studio studio1 = new Studio("Studio Charles Trenet", 2000, producer1);
+        Studio studio2 = new Studio("Studio 105", 25, producer2);
+        Studio studio = new Studio("Studio 305", 15, producer3);
+
 
 
         Programme nightfly = new Programme("The Nightfly", 120, producer1, Ads.EASYJET);
