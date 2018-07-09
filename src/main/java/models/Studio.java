@@ -1,5 +1,6 @@
 package models;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
@@ -21,7 +22,7 @@ public class Studio {
         this.producer = producer;
     }
 
-    public int getId() {
+    @Column(name = "id") public int getId() {
         return id;
     }
 
@@ -29,7 +30,7 @@ public class Studio {
         this.id = id;
     }
 
-    public String getName() {
+    @Column(name = "name") public String getName() {
         return name;
     }
 
@@ -37,15 +38,16 @@ public class Studio {
         this.name = name;
     }
 
+    @Column(name = "capacity")
     public int getCapacity() {
         return capacity;
     }
 
-    public void setCapacity(int capacity) {
+   public void setCapacity(int capacity) {
         this.capacity = capacity;
     }
 
-    public Producer getProducer() {
+    @Column(name = "producer") public Producer getProducer() {
         return producer;
     }
 
@@ -53,4 +55,4 @@ public class Studio {
         this.producer = producer;
     }
 }
-}
+
